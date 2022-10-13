@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+body { 
+    background-color: black;
+    background-image: url("../assets/img/naturaleza\ muerrta\ resucitando.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: 50%;
+
+}
+
+.NavBar {
+    display: flex;
+    padding: 8px;
+    text-align: center;
+    justify-content: space-evenly;
+    background-color: rgba(255, 34, 0, 0.633);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.seccion {
+    color: rgba(247, 243, 243, 0.968);
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.lineas {
+    color: white;
+}
+
+
+.footer {
+    display: inline-block;
+    padding: 8px;
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(220, 53, 19, 0.329);    
+}
+
+
+
