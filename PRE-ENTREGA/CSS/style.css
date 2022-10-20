@@ -1,0 +1,205 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+.body {
+    /* margin: 0%;
+    display: grid;
+    min-height: 100vh; */
+    background-color: black;
+    background-image: url(/assets/img/FONDO3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.logo {
+    display: grid;
+    justify-items: center;
+    padding: 60px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    background-color: rgba(43, 91, 34, 0.704);
+}
+ 
+
+.container-grid {   /**********GRIDS*********/
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(2, 50px);
+    grid-template-areas:
+    "box-1 box-3 box-5"
+    "box-2 box-4 box-6";
+    column-gap: 10px;
+    justify-content: center;
+    align-content: center;
+}
+
+.box-1 {
+    background-color: blueviolet;
+    color: whitesmoke;
+    grid-area: box-1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-2 {
+    grid-area: box-2;
+}
+
+.box-3 {
+    background-color: rgb(118, 23, 23);
+    color: whitesmoke;
+    grid-area: box-3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.box-4 {
+    grid-area: box-4;
+}
+
+.box-5 {
+    background-color: rgb(9, 39, 8);
+    color: whitesmoke;
+    grid-area: box-5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-6 {
+    grid-area: box-6;
+}
+
+.box-2 img{
+    width: 300px;
+ }
+ .box-4 img{
+    width: 300px;
+ }
+ .box-6 img{
+    width: 300px;
+    height: 400px;
+ }        
+
+.form-contact { /** FORMULARIO DE CONTACTO **/
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    width: 400px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-60%, 10%);
+}
+
+.contact {   
+    padding: .8rem;
+    overflow: hidden;
+}
+
+.contact label, .contact input, .contact textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.contact label {
+    font-weight: 700;
+}
+
+.contact textarea {
+    min-height: 100px;
+}
+
+input {
+    padding: 10px;
+    cursor: pointer;
+}
+
+/***** FOOTER ******/
+
+.footer {             
+    padding: 1em 0;
+    margin-top: auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+footer a {
+    text-decoration: underline;
+    color: rgb(27, 27, 138);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+/***** PAGES ******/
+
+.informaticus {
+    display:grid;
+    padding: 8px;
+    text-align: center;
+    justify-content: space-evenly;
+    color: rgb(213, 204, 204);
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.sobre-mi {
+    display:grid ;
+    padding: 10px;
+    text-align: center;
+    justify-content: space-evenly;
+    color: rgb(213, 204, 204);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+.artisticus {
+    display:flex;
+    padding: 100px;
+    text-align: center;
+    justify-content: space-evenly;
+    color: rgb(213, 204, 204);
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+/* ANIMACION PARRAFO -SECCION SOBRE MI- */
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+p {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
