@@ -19,7 +19,7 @@ nav ul li {
     display: grid;
     min-height: 100vh; */
     background-color: black;
-    background-image: url(/assets/img/FONDO3.jpg);
+    background-image: url(../assets/img/FONDO3.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     font-family: 'Courier New', Courier, monospace;
