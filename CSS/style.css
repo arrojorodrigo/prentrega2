@@ -203,3 +203,25 @@ p {
     animation-duration: 3s;
     animation-name: slidein;
   }
+
+  /* TABLET */
+  @media (max-width:768px) {
+    .container-grid{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(6,1fr);
+    }
+    .navbar{
+        justify-content: flex-end;
+    }
+  }
+  /* MOBILE */
+  @media (max-width:576px){
+    .container-grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8,1fr);
+    }
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+    }
+  }
